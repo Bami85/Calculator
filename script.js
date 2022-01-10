@@ -7,7 +7,7 @@ var svarLista = document.getElementById("svar-lista");
 
 function sparaLista(array){
 
-	// en loop som skriver ut alla talen man räknat ut i en lista
+	// skriver en forloop som skriver ut alla talen man räknat ut i en lista
     for(i = 0; i < array.length; i++){
         var li1 = document.createElement("li");
         var txt = document.createTextNode(array[i]);
@@ -34,12 +34,10 @@ function rakna() {
 		slista.innerHTML = "Skriv ett nummer istället !!!";
 	}else {
 
-		/*
-			här använder den värdet som kommer från
-			select, och beroende på vad som valdes
-			så kommer någon av casearna köras
-		*/
-
+		
+		
+		
+		
 		switch (rakna)												
 		{															
 			case "plus":											
@@ -76,7 +74,3 @@ function rakna() {
 		}
 	}																
 }
-/*
-eftersom det inte kan bli något annat än de case som finns
-så har jag ingen default	
-*/
